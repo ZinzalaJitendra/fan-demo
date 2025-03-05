@@ -1,0 +1,45 @@
+/* Base styles for the fan box */
+.fan-box {
+    width: 300px;
+    height: 300px;
+    background-image: url('./img/fan.png');
+    background-size: cover;
+    margin: 100px auto;
+}
+
+/* Animation classes */
+.spin {
+    animation: rotation 10s linear infinite;
+}
+.speed-1 {
+    animation-duration: 2s;
+}
+.speed-2 {
+    animation-duration: 1s;
+}
+.speed-3 {
+    animation-duration: 0.5s;
+}
+
+/* Keyframes for spinning */
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Button styles */
+.btn-div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-div button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
